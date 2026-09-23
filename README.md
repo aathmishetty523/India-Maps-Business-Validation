@@ -17,24 +17,6 @@ The project is deliberately reproducible. It does not claim that a fabricated da
 ## Tech stack
 Python, Pandas, SQL, PostgreSQL/MySQL-compatible SQL, Excel/CSV, Power BI, OpenStreetMap/Overpass API.
 
-## Project structure
-```text
-india_maps_business_validation/
-├── data/
-│   ├── raw/
-│   └── processed/
-├── notebooks/
-├── src/
-│   ├── fetch_osm.py
-│   └── validate_business_data.py
-├── sql/
-│   └── validation_queries.sql
-├── dashboard/
-├── docs/
-├── requirements.txt
-└── README.md
-```
-
 ## Validation rules
 1. Required business name
 2. Valid 6-digit Indian PIN code format
@@ -45,28 +27,4 @@ india_maps_business_validation/
 7. Opening-hours completeness
 8. Overall data-quality score
 
-## Run
-```bash
-pip install -r requirements.txt
-python src/validate_business_data.py
-```
 
-The validator produces:
-`data/processed/validated_business_data.csv`
-
-## Optional OSM extraction
-The OSM extractor uses the Overpass API to retrieve tagged businesses/amenities for a selected city. Keep queries small and respectful of public-server limits.
-
-## Dashboard
-Import `validated_business_data.csv` into Power BI and create:
-- Total records
-- Valid records
-- Records requiring review
-- Data quality %
-- Error type distribution
-- City-wise validation issues
-- Category-wise validation issues
-- Map of records requiring review
-
-## Important portfolio note
-Use official/reference data for final validation. The included sample CSV is a testing fixture, not a claim that the listed businesses or attributes are current official records.
