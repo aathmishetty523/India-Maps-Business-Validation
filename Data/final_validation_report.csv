@@ -1,0 +1,8 @@
+﻿Business Name,Category,City,State,PIN Code,Latitude,Longitude,Opening Hours,Data Quality Score,Validation Status,Issues Found
+ABC Cafe,Cafe,Bengaluru,Karnataka,560001,12.9716,77.5946,9 AM - 10 PM,80,REVIEW,Duplicate Record
+City Hospital,Hospital,Mangaluru,Karnataka,575001,12.9141,74.856,24 Hours,100,VALID,No Issues
+Mysore Pharmacy,Pharmacy,Mysuru,Karnataka,570001,12.2958,76.6394,8 AM - 9 PM,100,VALID,No Issues
+Mangalore Bakery,Bakery,Mangaluru,Karnataka,575001,12.9145,74.8564,8 AM - 8 PM,100,VALID,No Issues
+Bengaluru Library,Library,Bengaluru,Karnataka,560034,12.9352,77.6245,10 AM - 6 PM,100,VALID,No Issues
+Sai Medical and Polyclinic,Pharmacy,Bengaluru,Karnataka,560066,12.69,77.73,"Monday-Sunday, 9:30 AM-10:00 PM",100,VALID,No Issues
+ABC Cafe,Cafe,Bengaluru,Karnataka,560001,,,,0,REVIEW,"Duplicate Record, Missing Latitude, Missing Longitude, Missing Opening Hours"
